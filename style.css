@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.vehicle {
+  padding: 40px;
+}
+.vDet {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.reg-no {
+  font-size: 1.5rem;
+}
+.reg input {
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid rgb(214, 211, 211);
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+.reg input:focus,
+.inputF input:focus,
+.inputF select:focus {
+  outline: none;
+  border-bottom: 1px solid skyblue;
+}
+.inputF {
+  margin: 20px 0;
+}
+.inputF input,
+.inputF select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(214, 211, 211);
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.col-gap {
+  column-gap: 110px;
+}
+.color {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  flex-direction: row;
+  /* margin: 0 10px; */
+}
+.Vcolor,
+.radio-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.colorBox {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+.name {
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+.Vcolor :nth-child(1) .colorBox {
+  background-color: rgb(216, 211, 211);
+}
+.Vcolor :nth-child(2) .colorBox {
+  background-color: red;
+}
+.Vcolor :nth-child(3) .colorBox {
+  background-color: skyblue;
+}
+.Vcolor :nth-child(4) .colorBox {
+  background-color: green;
+}
+.Vcolor :nth-child(5) .colorBox {
+  background: linear-gradient(rgb(216, 211, 211), red, blue, green);
+}
+.radio {
+  margin-top: 10px;
+}
+.radio label {
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+.car {
+  width: auto;
+  background-color: rgb(180, 221, 221);
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin: 0 10px;
+}
+.SerRad {
+  margin: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .Vcolor,
+  .radio-sec {
+    justify-content: start;
+  }
+  .color,
+  .radio {
+    margin: 10px;
+  }
+}
