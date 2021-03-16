@@ -1,12 +1,17 @@
 .cusDet {
   height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(250, 248, 248);
   padding: 10px 20px;
 }
 .corpCheck {
   margin-right: 20px !important;
   font-size: 1.2rem;
+}
+.inputSection,
+.midSec,
+.payment {
+  background-color: #fff;
 }
 .inputSection .Cusright,
 .inputSection .Cusleft {
