@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Detail</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/customer.css" />
+  </head>
+  <body>
+    <div class="cusDet">
+      <div class="inputSection shadow p-4">
+        <p class="Det">Customer Details</p>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="inputF">
+              <label>Select Corporate / Fleet</label>
+              <input type="text" placeholder="Select Corporate / Fleet" />
+            </div>
+            <div class="inputF">
+              <label>Alternative Mobile No*</label>
+              <input type="number" placeholder=" Alternative Mobile No" />
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="inputF">
+              <label>Customer Name*</label>
+              <input type="text" placeholder="Customer Name" />
+            </div>
+            <div class="inputF">
+              <label>Email ID</label>
+              <input type="email" placeholder=" Email Id " />
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="inputF">
+              <label>Select Corporate / Fleet</label>
+              <input type="number" placeholder="Mobile No" />
+            </div>
+            <div class="inputF">
+              <label>Est.del Date*</label>
+              <input
+                type="date"
+                value="+91 1234567890"
+                placeholder="Est.del Date"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid border-bottom">
+          <div class="row py-2">
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <div class="Cusleft">
+                <div
+                  class="arrow d-flex justify-content-start align-items-center"
+                >
+                  <i
+                    class="fas fa-caret-right arrow"
+                    onclick="show()"
+                    id="arrow"
+                  ></i
+                  ><label>Other Details</label>
+                </div>
+              </div>
+
+              <div class="Cusright d-flex flex-row">
+                <label class="corpCheck">Corporate</label>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="flexSwitchCheckChecked"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <ul class="ml-4" id="Disp">
+              <li>Lorem ipsum, dolor sit amet</li>
+              <li>Lorem ipsum, dolor sit amet</li>
+              <li>Lorem ipsum, dolor sit amet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="midSec shadow mt-4 p-4">
+        <h5>Insurance/Policy & Claim</h5>
+
+        <hr />
+        <div class="insurance">
+          <div
+            class="ins-inner d-flex justify-content-start align-items-center"
+          >
+            <i class="fas fa-caret-right" onclick="show1()" id="arrow1"></i
+            ><label>Insurance Company Details</label>
+          </div>
+          <ul class="ml-4" id="Disp1">
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+          </ul>
+          <div
+            class="ins-inner d-flex justify-content-start align-items-center"
+          >
+            <i class="fas fa-caret-right" onclick="show2()" id="arrow2"></i
+            ><label>Policy & Claim information</label>
+          </div>
+          <ul class="ml-4" id="Disp2">
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+          </ul>
+          <div
+            class="ins-inner d-flex justify-content-start align-items-center"
+          >
+            <i class="fas fa-caret-right" onclick="show3()" id="arrow3"></i
+            ><label>Surveyar Details</label>
+          </div>
+          <ul class="ml-4" id="Disp3">
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+            <li>Lorem ipsum, dolor sit amet</li>
+          </ul>
+        </div>
+      </div>
+      <div class="payment shadow px-4 py-2 mt-4">
+        <div class="d-flex justify-content-between align-item-center">
+          <h5 class="mb-0">Advance Payment</h5>
+          <i class="fas fa-sort-down" onclick="payments()" id="arrowpay"></i>
+        </div>
+        <ul class="ml-4" id="pay">
+          <li>Lorem ipsum, dolor sit amet</li>
+          <li>Lorem ipsum, dolor sit amet</li>
+          <li>Lorem ipsum, dolor sit amet</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const disp = document.getElementById('Disp');
+      const arrow = document.getElementById('arrow');
+
+      function show() {
+        disp.classList.toggle('show');
+        arrow.classList.toggle('fa-sort-down');
+      }
+      const Disp1 = document.getElementById('Disp1');
+      const arrow1 = document.getElementById('arrow1');
+      function show1() {
+        Disp1.classList.toggle('show');
+        arrow1.classList.toggle('fa-sort-down');
+      }
+      const Disp2 = document.getElementById('Disp2');
+      const arrow2 = document.getElementById('arrow2');
+      function show2() {
+        Disp2.classList.toggle('show');
+        arrow2.classList.toggle('fa-sort-down');
+      }
+      const Disp3 = document.getElementById('Disp3');
+      const arrow3 = document.getElementById('arrow3');
+      function show3() {
+        Disp3.classList.toggle('show');
+        arrow3.classList.toggle('fa-sort-down');
+      }
+      const payment = document.getElementById('pay');
+      const arrowpay = document.getElementById('arrowpay');
+      function payments() {
+        payment.classList.toggle('show');
+        arrowpay.classList.toggle('fa-sort-up');
+      }
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
